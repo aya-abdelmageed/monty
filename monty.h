@@ -7,6 +7,7 @@
 #include <ctype.h>
 #include <sys/types.h>
 #include <fcntl.h>
+#include <errno.h>
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -61,8 +62,8 @@ typedef void (*instruct_f)(stack_t **head, unsigned int line_number);
 instruct_f op_func(char *s);
 char *parse_line(char *line, stack_t **head, unsigned int line_number);
 int is_num(char *s);
-
 void read_file(char *f, stack_t **head);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
 void _free(stack_t *head);
 void _nop(stack_t **head, unsigned int line_number);
