@@ -1,4 +1,13 @@
 #include "monty.h"
+
+/**
+ * _getline - Read a line from a file stream
+ * @lineptr: Pointer to a buffer to store the line
+ * @n: Pointer to the size of the buffer
+ * @stream: File stream to read from
+ *
+ * Return: The number of characters read, or -1 on failure
+ */
 size_t _getline(char **lineptr, size_t *n, FILE *stream) {
   char *buffer;
   size_t len;
