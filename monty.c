@@ -1,6 +1,6 @@
 #include "monty.h"
-global_var var;
 
+global_var var;
 /**
  * main - function for monty prog
  * @c: the numbers of arguments
