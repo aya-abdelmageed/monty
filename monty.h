@@ -61,7 +61,7 @@ typedef void (*instruct_f)(stack_t **head, unsigned int line_number);
 instruct_f op_func(char *s);
 char *parse_line(char *line, stack_t **head, unsigned int line_number);
 int is_num(char *s);
-ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+
 void read_file(char *f, stack_t **head);
 
 void _free(stack_t *head);

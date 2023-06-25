@@ -116,7 +116,7 @@ void read_file(char *f, stack_t **head)
 		exit(EXIT_FAILURE);
 	}
 
-	while ((read = getline(&var.buffer, &i, var.file)) != -1)
+	while ((read = getline(&var_global.buffer, &i, var_global.file)) != -1)
 	{
 		line = parse_line(var.buffer, head, count_line);
 		if (line == NULL || line[0] == '#')

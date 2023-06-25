@@ -14,5 +14,3 @@ pall
 
 push 7
 pall
-
-
